@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="5ff1c9e5-21fe-4f7b-9507-1c597a0c379b" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="a78417f3-ff15-451a-bb3c-db1f78d89784" name="Domain">
+      <references>
+        <reference Id="9d50a88d-82da-4e26-9426-eaea076a0386" name="Domain">
+          <ArtifactNode Label="Domain" Category="CodeSchema_Project" Id="(Assembly=../../Domain)">
+            <Category Ref="SolutionFolder" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=MyApp.Domain)" Label="MyApp.Domain.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="73b5e3d5-dc48-4144-be12-2cd83c26711e" name="Presentation">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="191fcc8f-6440-41b2-a3dc-ac16d3cda1d5" direction="Forward">
+          <layerMoniker Id="167f7f2d-a6b5-4537-94cd-768d41a1bba5" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="9bc5ac72-00d5-453f-b0a3-a65fae659877" name="Presentation">
+          <ArtifactNode Label="Presentation" Category="CodeSchema_Project" Id="(Assembly=../../Presentation)">
+            <Category Ref="SolutionFolder" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=MyApp.Presentation.Web)" Label="MyApp.Presentation.Web.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="167f7f2d-a6b5-4537-94cd-768d41a1bba5" name="Service">
+      <references>
+        <reference Id="aff070ff-7a36-42e7-a25f-22f9fa6e0927" name="Service">
+          <ArtifactNode Label="Service" Category="CodeSchema_Project" Id="(Assembly=../../Service)">
+            <Category Ref="SolutionFolder" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=MyApp.Service)" Label="MyApp.Service.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="7c0e3db0-2a43-4be7-ae37-52e2cad24820" name="Infrastructure">
+      <references>
+        <reference Id="cc795f7c-ecf7-4562-a971-72ca14c8d763" name="Infrastructure">
+          <ArtifactNode Label="Infrastructure" Category="CodeSchema_Project" Id="(Assembly=../../Infrastructure)">
+            <Category Ref="SolutionFolder" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=MyApp.Infrastructure.Persistence.EF)" Label="MyApp.Infrastructure.Persistence.EF.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+  </layers>
+</layerModel>

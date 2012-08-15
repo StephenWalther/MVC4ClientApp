@@ -1,0 +1,28 @@
+﻿<form data-bind="submit:login">
+    <div>
+        <label>
+            User Name:
+            <br />
+            <input data-bind="value:userName" required />
+        </label>
+    </div>
+    <div>
+        <label>
+            Password:
+            <br />
+            <input data-bind="value:password" type="password" required />
+        </label>
+    </div>
+    <div>
+        <input type="submit" value="Login" />
+    </div>
+</form>
+
+
+@section scripts {
+    <script>    
+        ko.applyBindings(new MyApp.ViewModels.AccountViewModel());
+    </script>
+}
+
+
